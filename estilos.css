@@ -1,0 +1,634 @@
+
+
+body {
+    background-color: #f4f1e8;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    
+}
+header{
+    position: fixed;
+}
+.Cabecera{
+    position: fixed;
+    background-color: #f4f1e8;
+    top: 0; /* Asegúrate de que esté pegado a la parte superior */
+    left: 0; /* Asegúrate de que esté alineado a la izquierda */      
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;    
+    height: 100px;
+    z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+    display: flex;
+    flex-direction: row;
+   
+    
+   
+}
+header img{
+    margin: auto;
+    padding-top: 25px;
+}
+
+.menu {
+    background-color: #f4f1e8;
+    position: fixed;
+    display: flex;
+    margin: 0;
+    padding-top: 100px;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: space-between;   
+    border: 1px solid rgba(50, 48, 48, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height:150px;
+}
+.items-menu {
+    list-style: none;
+    display: inline;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    align-content: center;
+    margin: auto;
+    text-decoration: none;
+}
+
+.items-menu li {
+    display: inline;
+    margin: 0;
+    font-weight:bold;
+    color:#a44415;
+    padding: 5px 10px;
+    border-right: 1px solid rgba(46, 44, 44, 0.2);
+    text-align: center;
+}
+.items-menu li a{
+    text-decoration: none; /* Eliminar subrayado */
+    font-size: 12px;
+    color: #a44415;
+}
+.items-menu li a:hover{
+    font-weight:bold;
+    font-size: 13px;
+    color: #83482a;
+}
+.Descripcion{
+    margin-top: 300px;
+    width: 70%;
+    align-items: center;
+    margin: auto;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    
+}
+.texto_1{
+    
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    width: 40%;
+    color: #000;
+    font-family: "Advent Pro", sans-serif;
+    margin: auto;
+    font-size: 20px;
+    line-height:1.5;
+
+}
+.texto_1 h2{
+
+    color: #a44415;
+    font-family: "Acme", sans-serif;
+    font-size: 42px;
+}
+.Imagen_perfil{
+    margin-top: 200px;
+
+   
+   
+}
+.Imagen_perfil img{
+    border-radius: 15%;
+    border: solid 5px;
+    border-color: #a44415;
+}
+ h4{
+    text-align: center;
+    font-size: 50px;
+    color: #a44415;
+    font-family: "Acme", sans-serif;
+
+}
+.Formacion{
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-between;
+}
+.card1{
+    margin: auto;
+    padding: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.card-body{
+    text-align: center;
+    font-family: "Advent Pro", sans-serif;
+    font-size: 18px;
+}
+.card-title{
+    color:  #a44415;
+    font-family: "Acme", sans-serif;
+    font-size: 20px;
+}
+.line_1{
+
+    border: solid 1px ;
+    border-color:  #83482a;
+    opacity: 70%;
+    
+}
+.Habilidades{
+
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-between;
+    height: 500px;
+   
+
+}
+.card2{
+    margin: auto;
+    padding-top: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+.card2 h3{
+    font-size: 20px;
+    line-height:1.5;
+    padding: 15px;
+}
+.card-text{
+
+    margin: auto;
+    line-height:1.5;
+    
+}
+.introduccion{
+    justify-content: center;
+    text-align: center;
+    margin:auto;
+    padding-bottom: -40px;
+    width: 60%;
+    font-family: "Advent Pro", sans-serif;
+    font-size: 18px;
+}
+
+.Categoria{
+
+    margin-top: 150px;
+    margin-bottom: 15px;
+    font-family:  "Acme", sans-serif ;
+    font-size: 40px;
+   
+}
+
+
+.carrusel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.imagenes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    
+}
+
+.img{
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.85);
+    height: 576px;
+    width: 1134px;
+    border-radius: 15px ;
+    margin: 5px;
+    
+    object-fit: cover;
+    /* filter: saturate(175%); */
+}
+
+.texto{
+    
+    position: absolute; /* Para que se ponga por encima de la imagen */
+    flex-direction: column;
+    transform: translateY(0px);
+    margin-bottom: -20px;
+    /* backdrop-filter: blur(20px); Filtro para distorsionar el fondo */
+    /* background-color: rgba(63, 106, 138, 0.21); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+.texto h3{
+    text-shadow: 0px 5px 10px black;
+    padding-top: 40px;
+    text-align: center;
+    color: #fcf5e7;
+    font-weight: bold;
+    font-size: 45px;
+    font-family:  "Acme", sans-serif ;
+    margin: 10px;
+    padding: 10px;
+    
+}
+.imagenes .texto{
+    width: 600px;
+    height: 150px;
+    transition: 1s;
+    opacity: 0;
+
+}
+
+.imagenes:hover .texto{
+    transition: height 1s, transform 1s, background-color 1s;
+    transform: translateY(-150px);
+    height: 350px;      
+    background-color: rgba(116, 13, 13, 0.71);
+    opacity: 1;
+}
+.imagenes:hover .texto:empty{
+    display: none;
+}
+
+
+.imagenes .texto p{
+    
+    font-size: 20px;
+    font-family: "Advent Pro", sans-serif;;
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 0px 0px 10px #000000;
+    text-align: justify;
+    padding: 20px;
+    
+}
+.imagenes:hover .texto p{
+    transition: font-size 0s .2s linear;
+    font-size: 20px;
+    font-family: "Advent Pro", sans-serif;;
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 0px 0px 10px #000000;
+    text-align: justify;
+    padding: 20px;
+    opacity: 1;
+}
+
+
+.puntos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+
+.puntos p{
+    font-size: 80px;
+    font-weight: 500;
+    margin-top: -100px;
+    color: rgba(177, 77, 11, 0.703);
+}
+
+.puntos .bold{
+    font-weight: 600;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #7a1706;
+}
+
+.carrusel3d{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.Renders{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    
+}
+
+.img3d{
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.85);
+    height: 576px;
+    width: 1130px;
+    border-radius: 15px ;
+    margin: 5px;    
+    object-fit: cover;
+    /* filter: saturate(175%); */
+}
+.texto3d{
+    
+    position: absolute; /* Para que se ponga por encima de la imagen */
+    flex-direction: column;
+    transform: translateY(0px);
+    margin-bottom: -20px;
+    /* backdrop-filter: blur(20px); Filtro para distorsionar el fondo */
+    /* background-color: rgba(63, 106, 138, 0.21); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+.texto3d h3{
+    text-shadow: 0px 5px 10px black;
+    padding-top: 40px;
+    text-align: center;
+    color: #fcf5e7;
+    font-weight: bold;
+    font-size: 45px;
+    font-family:  "Acme", sans-serif ;
+    margin: 10px;
+    padding: 10px;
+    
+}
+.Renders .texto3d{
+    width: 600px;
+    height: 150px;
+    transition: 1s;
+    opacity: 0;
+
+}
+
+.Renders:hover .texto3d{
+    transition: height 1s, transform 1s, background-color 1s;
+    transform: translateY(-150px);
+    height: 350px;  
+     
+    background-color: rgba(116, 13, 13, 0.71); 
+    opacity: 1;
+}
+.Renders:hover .texto3d:empty{
+    display: none;
+}
+
+
+.Renders .texto3d p{
+    
+    font-size: 20px;
+    font-family: "Advent Pro", sans-serif;;
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 0px 0px 10px #000000;
+    text-align: justify;
+    padding: 20px;
+    
+}
+.Renders:hover .texto3d p{
+    transition: font-size 0s .2s linear;
+    font-size: 20px;
+    font-family: "Advent Pro", sans-serif;;
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 0px 0px 10px #000000;
+    text-align: justify;
+    padding: 20px;
+    opacity: 1;
+}
+
+
+.puntos3d{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+
+.puntos3d p{
+    font-size: 80px;
+    font-weight: 500;
+    margin-top: -100px;
+    color: rgba(177, 77, 11, 0.703);
+}
+
+.puntos3d .bold{
+    font-weight: 600;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #7a1706;
+}
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.contenedorImagenes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+.imagenActual {
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.85);
+    height: 576px;
+    width: 1134px;
+    border-radius: 15px;
+    margin: 5px;
+    object-fit: cover;
+    /* filter: saturate(175%); */
+}
+
+.descripcion {
+    position: absolute; /* Para que se ponga por encima de la imagen */
+    flex-direction: column;
+    transform: translateY(0px);
+    margin-bottom: -20px;
+    /* backdrop-filter: blur(20px); Filtro para distorsionar el fondo */
+    /* background-color: rgba(63, 106, 138, 0.21); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+.descripcion h3 {
+    text-shadow: 0px 5px 10px black;
+    padding-top: 40px;
+    text-align: center;
+    color: #fcf5e7;
+    font-weight: bold;
+    font-size: 45px;
+    font-family: "Acme", sans-serif;
+    margin: 10px;
+    padding: 10px;
+}
+
+.contenedorImagenes .descripcion {
+    width: 600px;
+    height: 150px;
+    transition: 1s;
+    opacity: 0;
+}
+
+.contenedorImagenes:hover .descripcion {
+    transition: height 1s, transform 1s, background-color 1s;
+    transform: translateY(-150px);
+    height: 350px;
+    background-color: rgba(116, 13, 13, 0.71);
+    opacity: 1;
+}
+
+.contenedorImagenes:hover .descripcion:empty {
+    display: none;
+}
+
+.contenedorImagenes .descripcion p {
+    font-size: 20px;
+    font-family: "Advent Pro", sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 0px 0px 10px #000000;
+    text-align: justify;
+    padding: 20px;
+}
+
+.contenedorImagenes:hover .descripcion p {
+    transition: font-size 0s .2s linear;
+    font-size: 20px;
+    font-family: "Advent Pro", sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 0px 0px 10px #000000;
+    text-align: justify;
+    padding: 20px;
+    opacity: 1;
+}
+
+.indicadores {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+
+.indicadores p {
+    font-size: 80px;
+    font-weight: 500;
+    margin-top: -100px;
+    color: rgba(177, 77, 11, 0.703);
+}
+
+.indicadores .bold {
+    font-weight: 600;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #7a1706;
+}
+.Contacto{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #a44415;
+
+}
+.Contacto h4{
+
+    color: #f4f1e8;
+}
+.elementos_contacto{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.elementos_contacto p{
+
+    width: 30%;
+    margin-top: 20px;
+    height: 200px;
+    margin-left: 250px;
+    padding: 30px;   
+    font-family:  "Advent Pro", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: justify;    
+    color: #f4f1e8;
+}
+.Iconos_contacto{
+    border-left:solid #f4f1e8 3px ;
+
+}
+
+.card3{
+
+    display: flex;
+    flex-direction: row;
+}
+.card-img3{
+    padding: 10px;
+    margin-top: 15px;
+}
+.card-text3{
+
+    font-family: "Advent Pro", sans-serif;
+    font-weight: 400;
+    font-size: 20px;   
+    padding: 10px;
+    color: #f3dbae;
+     
+
+}
+.card-text3 a{
+
+    text-decoration: none;
+    color: inherit;
+}
+.card-text3 a:hover{
+
+    color: #ffffff;
+    font-weight: bold;
+
+}
+
+footer{
+
+    height: 70px;
+    background-color: #a44415;
+}
+
+
